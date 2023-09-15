@@ -12,7 +12,8 @@ My approach to modeling pitch quality is a bit different from the versions of th
 
  Use predicted context-neutral run values of balls in play with exit velocity, launch angle, and spray angle (binned and normalized for batter handedness) as the target for the model. Using context-neutral run values helps us evaluate the result of each specific pitch without baserunner and outs information leaking in from the previous ones. Using predicted run values helps to separate some of the noise from outcomes that are a result of defense, park dimensions, weather, etc. Eliminating noise in the target variable of the model really helps regularize predictions for pitches with outlier characteristics especially in small sample sizes.
 
-2. Feature engineering / extra feature inclusions: 
+2. Feature engineering / extra feature inclusions:
+
     I've included some extra features in my model along with the traditionally used features.
     Traditional features:
     - velocity (`release_speed`)
