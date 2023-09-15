@@ -15,6 +15,7 @@ My approach to modeling pitch quality is a bit different from the versions of th
 2. Feature engineering / extra feature inclusions:
 
     I've included some extra features in my model along with the traditionally used features.
+    
     Traditional features:
     - velocity (`release_speed`)
     - vertical movement (`az`)
