@@ -37,4 +37,4 @@ My approach to modeling pitch quality is a bit different from the versions of th
 #### You can find the current leaders for my stuff quality metric for different pitch types in `stuff.ipynb`.
 
 ## Results
-![Alt text](../images/split_halves_correlation_2023.png)
+![correlations](split_halves_correlation_2023.png)
