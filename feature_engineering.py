@@ -23,7 +23,7 @@ def compute_fastball_relative_features(df):
 
 def compute_approach_angles(df):
     import numpy as np
-    df['vaa'] = np.arctan((df['plate_z'] - df['release_pos_z']) / (df['release_pos_y'])) * (180 / np.pi)
+    df['vaa'] = np.arctan((df['release_pos_z'] - df['plate_z']) / (df['release_pos_y'])) * (180 / np.pi)
     df['haa'] = np.arctan((df['plate_x'] - df['release_pos_x']) / (df['release_pos_y'])) * (180 / np.pi)
     return df
 
