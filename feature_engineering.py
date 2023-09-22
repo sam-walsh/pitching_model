@@ -7,6 +7,7 @@ def compute_fastball_relative_features(df):
         'az':'fastball_vert',
         'ax':'fastball_horz'})
 
+
     fastball_metrics = fastball_metrics.dropna()
     idx = fastball_metrics.groupby(['pitcher', 'game_pk'])['avg_top_velocity'].idxmax()
     fastball_metrics_max_velocity = fastball_metrics.loc[idx].rename(columns={'pitch_type':'top_velo_pitch_type'})
@@ -23,8 +24,8 @@ def compute_fastball_relative_features(df):
 
 def compute_approach_angles(df):
     import numpy as np
-    df['vaa'] = np.arctan((df['release_pos_z'] - df['plate_z']) / (df['release_pos_y'])) * (180 / np.pi)
-    df['haa'] = np.arctan((df['plate_x'] - df['release_pos_x']) / (df['release_pos_y'])) * (180 / np.pi)
+    df['vaa'] = np.arctan((2.5 - df['release_pos_z']) / (df['release_pos_y'])) * (180 / np.pi)
+    df['haa'] = np.arctan((0 - df['release_pos_x']) / (df['release_pos_y'])) * (180 / np.pi)
     return df
 
 def compute_adjusted_axis_deviation(df):
