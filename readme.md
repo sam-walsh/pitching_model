@@ -18,8 +18,8 @@ My approach to modeling pitch quality is a bit different from the versions of th
     
     Traditional features:
     - velocity (`release_speed`)
-    - vertical movement (`az`)
-    - horizontal movement (`ax`)
+    - vertical acceleration (`az`)
+    - horizontal acceleration (`ax`)
     - vertical location (`plate_z`)
     - horizontal location (`plate_x`)
 
